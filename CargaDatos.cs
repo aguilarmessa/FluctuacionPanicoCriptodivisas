@@ -348,7 +348,6 @@ namespace consumer
 
 
                 string url = "https://xrpcharts.ripple.com/#/graph/rGcyM8aFJwLEFajEeCJwtQJsCTYt9qXKsu";
-                //var uri = String.Format("https://www.google.es/search?q={0}&start={1}&num={2}", HttpUtility.UrlEncode("pepe"), 0, 10);
                 var uri = String.Format(url);
 
 
@@ -775,8 +774,8 @@ namespace consumer
                 string contenidoHTML = string.Empty;
 
 
-                string from = "alertas@botBTC.com";
-                string destinatario = "juan.roncero@dunetechnology.com";
+                string from = "XXXX";
+                string destinatario = "DDEDEDE";
 
                 MailMessage mimail = new MailMessage();
                 mimail.IsBodyHtml = true;
@@ -832,7 +831,7 @@ namespace consumer
 
 
 
-                SmtpClient MyMail = new SmtpClient("10.10.5.251");
+                SmtpClient MyMail = new SmtpClient("X.X.X.X");
                 MyMail.DeliveryMethod = SmtpDeliveryMethod.Network;
 
                 try
@@ -1301,94 +1300,4 @@ namespace consumer
         }
     }
 }
-
-
-
-//public class RootObject
-//{
-//    [JsonProperty("activities-heart")]
-//    public List<ActivitiesHeart> ActivitiesHeart { get; set; }
-//    [JsonProperty("activities-heart-intraday")]
-//    public ActivitiesHeartIntraday ActivitiesHeartIntraday { get; set; }
-//}
-
-//foreach(MarketTrade mk in eureka.markets)
-
-//GetMarketSummaryResponse res = ex.GetMarketSummary("BTC-LTC");
-// invalid markets
-// -- BTC
-// BTC-NEO
-// USDT-BTC 
-
-//string jaja = "pepe";
-//ok var eureka = ex.GetMarkets();
-
-//var result = JsonConvert.DeserializeObject<MarketTrade>(eureka);
-//foreach (var data in result.C)
-//{
-//    Console.WriteLine(result);
-//}
-
-
-//AccountBalance bal = ex.GetBalance("LTC");
-
-//GetMarketHistoryResponse res =  ex.GetMarketHistory("BTC", 10);
-
-//Product product = new Product();
-//product.Name = "Apple";
-//product.Expiry = new DateTime(2008, 12, 28);
-//product.Sizes = new string[] { "Small" };
-
-//string json = JsonConvert.SerializeObject(product);
-
-
-
-
-//inicioCargaAutomatica();
-
-// OK
-//cargaHistorico();
-
-
-
-// RECORRER FECHAS E IR PIDIENDO DATOS DE UN INTERVALO DE FECHAS
-//x.GetTicker();
-
-//GetBalancesResponse resBalanceResponse = ex.GetBalances();
-
-//AccountBalance aB = ex.GetBalance("LTC");
-
-//int P = 1;
-
-
-// OBTIENE HISTÓRICO COMPRAS -
-// https://bittrex.com/api/v1.1/public/getmarkethistory?market=usdt-btc 
-///GetMarketHistoryResponse res = ex.GetMarketHistory("LTC");
-
-
-
-// devuelve vacio GetBalancesResponse resBalanceResponse = ex.GetBalances();
-
-
-
-//for (int i = 0; i < mercados.Count; i++)
-//{
-
-//    //JsonSerializer serializer = new JsonSerializer();
-//    //var o = (JObject)serializer.Deserialize(mercados[i]);
-//    //string eu = (string)o[""][0];
-
-//    AccountBalance ab = new AccountBalance();
-//    //ab.Balance = mercados[i]  
-//}
-
-////for (int i = 0; i < eurekaxx.Count; i++)
-////{
-////    MarketSummary result = JsonConvert.DeserializeObject<MarketSummary>(eurekaxx);
-
-
-////    //AccountBalance ab = new AccountBalance();
-////    //ab.Balance = eurekaxx[i].Balance;
-////}
-
 
